@@ -2,11 +2,29 @@ body {
     background-color: #f58b57;
     font-family: Arial, Impact, sans-serif;
 }
-
+aside{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100vh;
+    background: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
 .main{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.me{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #ff595e;
+    margin-bottom: 20px;
 }
 .main h1{
     font-size: 48px;
@@ -58,9 +76,21 @@ body {
 }
 .stats{
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     transition: transform 0.2s;
+}
+.m1{
+    display: flex;
+    width: 60%;
+    height: auto;
+    height: 100%;
+}
+.m2{
+    display: flex;
+    width: 40%;
+    height: 100%;
 }
 .stats img:hover {
     transform: scale(1.05);
