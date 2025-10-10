@@ -6,7 +6,7 @@ aside{
     position: fixed;
     left: 0;
     top: 0;
-    width: 220px;
+    width: 300px;
     height: 100vh;
     background: #f3f3f3;
     display: flex;
@@ -14,10 +14,32 @@ aside{
     align-items: center;
     padding-top: 30px;
 }
+aside .menu {
+    width: 100%;
+    border-top: 2px solid #ff595e;
+    align-self: flex-start;
+}
+aside .menu ul {
+    text-align: left;
+    padding-left: 30px; 
+}
+.ulpref{
+    list-style: none;
+}
+aside .menu a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff595e;
+    display: block;
+    padding:  10px;
+    transition: background-color 0.3s, color 0.3s;
+}
 .main{
+    padding-left: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
 }
 .me{
     width: 150px;
@@ -26,18 +48,18 @@ aside{
     border: 4px solid #ff595e;
     margin-bottom: 20px;
 }
-.main h1{
-    font-size: 48px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    color: #fff;
-    margin-bottom: 10px;
-}
-.main h2{
+aside h1{
     font-size: 24px;
     font-weight: bold;
-    color: #f58b57;
-    background-color: #fff;
+    letter-spacing: 3px;
+    color: #ff595e;
+    margin-bottom: 10px;
+}
+aside h2{
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff595e;
     display: inline-block;
     padding: 5px 15px;
     border-radius: 4px;
@@ -56,6 +78,14 @@ aside{
     justify-items: center;
     border-left: 10px solid #ffe066;
 }
+.about:hover {
+    border-left: 10px solid #ff595e;
+    transition: border-color 0.3s, transform 0.2s;
+}
+.about:hover h3{
+    color: #ff595e;
+    transition: color 0.3s;
+}
 .about h3{
     color: #ffe066; 
     font-weight: bold;
@@ -70,9 +100,11 @@ aside{
 }
 .about p{
     color: white;
-    font-size: 18px;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: justify;
+}
+#interests {
+    align-items: flex-start;
 }
 .stats{
     display: flex;
@@ -94,6 +126,9 @@ aside{
 }
 .stats img:hover {
     transform: scale(1.05);
+    transition: transform 0.2s;
 }
-
+.interesses ul {
+    list-style: none;
+}
 /* #ff595e */
