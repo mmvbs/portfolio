@@ -45,7 +45,8 @@ aside{
 }
 .about{
     margin: 0 20px;
-    width: 50%;
+    width: 60%;
+    max-width: 800px;
     padding: 10px;
     background-color: #222;
     border-radius: 8px;
